@@ -26,6 +26,11 @@ public class Triangle {
 		if(n == 1){b = new Point(p.getX(), p.getY());}
 		if(n == 2){c = new Point(p.getX(), p.getY());}
 	}
+	public void setVertex(int n, double nx, double ny) {
+		if(n == 0){a = new Point(nx, ny);}
+		if(n == 1){b = new Point(nx, ny);}
+		if(n == 2){c = new Point(nx, ny);}
+	}
 	public String toString() {
 		return "Triangle: A:(" + a.getX() + "," + a.getY() + ") B: (" + b.getX() + "," + b.getY() + ") C: (" + c.getX() + "," + c.getY + ")";
 	}
