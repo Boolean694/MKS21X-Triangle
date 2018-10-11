@@ -17,4 +17,8 @@ public class Point {
 	public double distTwoPts(Point a, Point b) {
 		return Math.sqrt((Math.abs(b.getX() - a.getX()) * Math.abs(b.getX() - a.getX())) + (Math.abs(b.getY() - a.getY()) * Math.abs(b.getY() - a.getY())));
 	}
+	
+	public String toS() {
+		return "(" + x + "," + y + ")";
+	}
 }

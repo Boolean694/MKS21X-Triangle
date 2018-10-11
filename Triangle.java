@@ -15,8 +15,8 @@ public class Triangle {
 	}
 	public Point getVertex(int vp) {
 		if(vp == 0) {return a;}
-		if(vp == 1) {return b;}
-		if(vp == 2) {return c;}
+		else if(vp == 1) {return b;}
+		else {return c;}
 	}
 	public double getPerimeter() {
 		return a.distOtherPt(b) + b.distOtherPt(c) + c.distOtherPt(a);
@@ -32,7 +32,7 @@ public class Triangle {
 		if(n == 2){c = new Point(nx, ny);}
 	}
 	public String toString() {
-		return "Triangle: A:(" + a.getX() + "," + a.getY() + ") B: (" + b.getX() + "," + b.getY() + ") C: (" + c.getX() + "," + c.getY + ")";
+		return "Triangle: A:(" + a.getX() + "," + a.getY() + ") B: (" + b.getX() + "," + b.getY() + ") C: (" + c.getX() + "," + c.getY() + ")";
 	}
 	
 }
